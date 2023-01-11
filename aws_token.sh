@@ -8,7 +8,7 @@ set -e
 # Use AWS_PROFILE env value to set profile
 # or take the first argument. If that is not
 # set too then fall back to default profile
-PROFILE="${AWS_PROFILE:-$1}"
+PROFILE="${1:-$AWS_PROFILE}"
 PROFILE="${PROFILE:-default}"
 TEMP_NAME="${2:-temp}"
 
